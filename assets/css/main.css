@@ -12015,3 +12015,15 @@ section,
     max-height: 200px;
   }
 }
+
+#header .navmenu a {
+  color: #000 !important;
+}
+#header .navmenu a.active,
+#header .navmenu a:focus,
+#header .navmenu a:hover {
+  color: var(--primary) !important;
+}
+
+
+
