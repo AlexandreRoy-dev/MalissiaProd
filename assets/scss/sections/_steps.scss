@@ -1,0 +1,154 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Steps Section
+--------------------------------------------------------------*/
+.steps {
+  .steps-wrapper {
+    position: relative;
+  }
+
+  .step-item {
+    margin-bottom: 80px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      .step-image {
+        &::before {
+          opacity: 1;
+        }
+
+        img {
+          transform: scale(1.05);
+        }
+      }
+
+      .step-content {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .step-image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(45deg,
+          color-mix(in srgb, var(--accent-color), transparent 92%),
+          transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    img {
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+
+  .step-content {
+    padding: 30px;
+    background-color: var(--surface-color);
+    border-radius: 10px;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .step-number {
+    font-family: var(--heading-font);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: color-mix(in srgb, var(--accent-color), transparent 85%);
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--heading-color);
+  }
+
+  p {
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .step-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      font-size: 0.95rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      i {
+        color: var(--accent-color);
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .step-item {
+      margin-bottom: 60px;
+    }
+
+    .step-content {
+      padding: 25px;
+    }
+
+    .step-number {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .step-item {
+      margin-bottom: 40px;
+    }
+
+    .step-content {
+      padding: 20px;
+    }
+
+    .step-number {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+
+    .step-features li {
+      font-size: 0.9rem;
+    }
+  }
+}
