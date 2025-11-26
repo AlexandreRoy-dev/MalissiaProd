@@ -1,0 +1,47 @@
+<svg width="1920" height="900" viewBox="0 0 1920 900" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- ===== LAYER 0: BASE BACKGROUND ===== -->
+  <rect width="1920" height="900" fill="#FDF5F7"/>
+
+  <!-- ===== LAYER 1: MAIN LUXURY PINK SHAPE ===== -->
+  <path d="
+    M1920 0
+    C1600 80 1500 320 1650 520
+    C1780 690 1500 900 1200 900
+    L1920 900 Z"
+    fill="#F8DCE4"
+  />
+
+  <!-- ===== LAYER 2: LARGE RIGHT ELLIPSE ===== -->
+  <ellipse cx="1550" cy="380" rx="600" ry="500" fill="#F4CDD8" opacity="0.85"/>
+
+  <!-- ===== LAYER 3: WHITE BOTTOM WAVE ===== -->
+  <ellipse cx="1500" cy="880" rx="900" ry="350" fill="white" opacity="0.92"/>
+
+  <!-- ===== LAYER 4: PREMIUM RADIAL LIGHTS ===== -->
+  <!-- Glow 1 -->
+  <ellipse cx="1480" cy="320" rx="320" ry="320" fill="white" opacity="0.35"/>
+
+  <!-- Glow 2 -->
+  <ellipse cx="1650" cy="550" rx="260" ry="260" fill="white" opacity="0.18"/>
+
+  <!-- ===== LAYER 5: DECORATIVE ABSTRACT CIRCLES ===== -->
+  <circle cx="1720" cy="140" r="110" fill="white" opacity="0.12"/>
+  <circle cx="1820" cy="650" r="140" fill="white" opacity="0.10"/>
+
+  <!-- Pink Accent Bubble -->
+  <circle cx="1500" cy="230" r="65" fill="#D0103A" opacity="0.22"/>
+
+  <!-- Mini Bubbles -->
+  <circle cx="1650" cy="300" r="28" fill="#D0103A" opacity="0.10"/>
+  <circle cx="1730" cy="500" r="24" fill="#D0103A" opacity="0.08"/>
+
+  <!-- ===== LAYER 6: SOFT DIAGONAL GRADIENT (PREMIUM TOUCH) ===== -->
+  <linearGradient id="diagGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+    <stop offset="100%" stop-color="#D0103A" stop-opacity="0.05"/>
+  </linearGradient>
+
+  <rect width="1920" height="900" fill="url(#diagGrad)"/>
+
+</svg>

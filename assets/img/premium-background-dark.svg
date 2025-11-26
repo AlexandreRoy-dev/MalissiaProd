@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 900">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9 {
+        isolation: isolate;
+      }
+
+      .st0, .st4 {
+        fill: #f8dce4;
+      }
+
+      .st0, .st8 {
+        opacity: .18;
+      }
+
+      .st10 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st1 {
+        fill: #b3173c;
+        opacity: .45;
+      }
+
+      .st2 {
+        opacity: .15;
+      }
+
+      .st2, .st3, .st6 {
+        fill: #fff;
+      }
+
+      .st3 {
+        opacity: .08;
+      }
+
+      .st4, .st9 {
+        opacity: .12;
+      }
+
+      .st5 {
+        opacity: .25;
+      }
+
+      .st5, .st8, .st9 {
+        fill: #d0103a;
+      }
+
+      .st6 {
+        opacity: .2;
+      }
+
+      .st11 {
+        fill: url(#linear-gradient);
+      }
+
+      .st7 {
+        fill: #7a0c28;
+        opacity: .35;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1=".25" y1="990.69" x2="1.25" y2="989.69" gradientTransform="translate(-480 891620.56) scale(1920 -900)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7a0c28"/>
+      <stop offset="1" stop-color="#b3173c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1=".16" y1="990.69" x2="1.16" y2="989.69" gradientTransform="translate(-134 891620.56) scale(1920 -900)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".2"/>
+    </linearGradient>
+  </defs>
+  <rect class="st11" y="-.22" width="1920" height="900" transform="translate(1920 899.56) rotate(180)"/>
+  <ellipse class="st1" cx="850" cy="479.78" rx="620" ry="520"/>
+  <ellipse class="st7" cx="1020" cy="599.78" rx="480" ry="440"/>
+  <ellipse class="st6" cx="900" cy="19.78" rx="900" ry="350"/>
+  <circle class="st2" cx="900" cy="549.78" r="330"/>
+  <circle class="st3" cx="700" cy="329.78" r="260"/>
+  <circle class="st0" cx="680" cy="749.78" r="110"/>
+  <circle class="st4" cx="590" cy="219.78" r="140"/>
+  <circle class="st5" cx="880" cy="669.78" r="70"/>
+  <circle class="st8" cx="760" cy="589.78" r="30"/>
+  <circle class="st9" cx="650" cy="379.78" r="28"/>
+  <rect class="st10" x="173" y="-.22" width="1920" height="900" transform="translate(2266 899.56) rotate(180)"/>
+</svg>

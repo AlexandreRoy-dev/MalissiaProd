@@ -28,6 +28,62 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+.logo-img {
+  height: 42px;    /* adjust as needed */
+  width: auto;
+  display: block;
+}
+.hero-image img.main-product {
+  width: 120%;
+  max-width: none;
+}
+
+.hero-image {
+  transform: scale(1.05);
+}
+/* Make all feature badges the same red */
+.f-icon {
+  background: #d0103a !important;
+  color: #fff !important;
+}
+.info-item {
+  display: flex;
+  flex-direction: column; /* forces vertical layout */
+  align-items: flex-start; 
+}
+
+.info-item .icon {
+  margin-bottom: 10px; /* icon → h3 spacing */
+}
+
+.info-item h3 {
+  margin: 0 0 6px 0; /* h3 → p spacing */
+}
+/* HERO BACKGROUND IMAGE */
+.hero-bg {
+  position: relative;
+  overflow: hidden;
+  background: url("assets/img/premium-background.svg") no-repeat center right;
+  background-size: cover;
+}
+/* FEATURES DARK LUXURY BACKGROUND */
+.features-bg {
+  position: relative;
+  overflow: hidden;
+  background: url("assets/img/premium-background-dark.svg") no-repeat center right;
+  background-size: cover;
+}
+
+.intro-highlights li {
+  color: #fff !important;        /* text becomes white */
+}
+
+.intro-highlights li i {
+  color: inherit !important;     /* icon keeps its original color */
+}
+
+  </style>
 </head>
 
 <body class="index-page">
@@ -36,9 +92,10 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <h1 class="sitename">Malissia Leblanc</h1>
-      </a>
+<a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+  <img src="assets/img/logo.svg" alt="Malissia Leblanc" class="logo-img">
+</a>
+
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -57,6 +114,7 @@
 
   <!-- HERO -->
  <section id="hero" class="hero section">
+
   <div class="container">
 
     <div class="row align-items-center">
@@ -94,8 +152,8 @@
         <div class="hero-image">
           <img src="assets/img/Malissia.webp" alt="Propriété moderne" class="img-fluid main-product">
           <div class="floating-badge">
-            <span class="discount">Nouvelle</span>
-            <span class="discount-text">Mise en marché</span>
+            <span class="discount">Votre</span>
+            <span class="discount-text">Courtière</span>
           </div>
         </div>
         <div class="decorative-element"></div>
@@ -106,7 +164,7 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="about section">
+<section id="about" class="about section ">
 
   <div class="container section-title" data-aos="fade-up">
     <h2>À propos</h2>
@@ -118,7 +176,7 @@
     <div class="row align-items-center gy-5">
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
         <div class="about-image-wrapper position-relative">
-          <img src="assets/img/about/about-8.webp" alt="Malissia Leblanc" class="img-fluid rounded-4">
+          <img src="assets/img/Maisonapropos.webp" alt="Malissia Leblanc" class="img-fluid rounded-4">
           <div class="mission-card">
             <div class="mission-icon">
               <i class="bi bi-heart"></i>
@@ -292,11 +350,12 @@
   </div>
 </section>
 <!-- FEATURES -->
-<section id="features" class="features section">
+<section id="features" class="features section features-bg">
+
 
   <div class="container section-title" data-aos="fade-up">
-    <h2>Services</h2>
-    <p>Des outils modernes, un accompagnement humain.</p>
+    <h2 class="text-white">Services</h2>
+    <p class="text-white">Des outils modernes, un accompagnement humain.</p>
   </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -309,16 +368,16 @@
             <img src="assets/img/features/features-3.webp" alt="" class="img-fluid rounded-4 shadow-sm">
           </figure>
           <div class="intro-content">
-            <h3 class="intro-title">Une expérience simple et efficace</h3>
-            <p>Acheter ou vendre une propriété ne devrait pas être compliqué. Avec une approche moderne et accessible, tout devient plus clair.</p>
+            <h3 class="intro-title text-white">Une expérience simple et efficace</h3>
+            <p class="text-white">Acheter ou vendre une propriété ne devrait pas être compliqué. Avec une approche moderne et accessible, tout devient plus clair.</p>
             <ul class="intro-highlights list-unstyled mt-3">
-              <li><i class="bi bi-check-circle-fill"></i> Outils numériques modernes</li>
-              <li><i class="bi bi-check-circle-fill"></i> Communication rapide et efficace</li>
-              <li><i class="bi bi-check-circle-fill"></i> Accompagnement personnalisé</li>
+              <li><i class="bi bi-check-circle-fill "></i> Outils numériques modernes</li>
+              <li><i class="bi bi-check-circle-fill "></i> Communication rapide et efficace</li>
+              <li><i class="bi bi-check-circle-fill "></i> Accompagnement personnalisé</li>
             </ul>
             <div class="mt-4">
               <a href="#contact" class="btn cta-btn"><i class="bi bi-box-arrow-in-right me-2"></i>Commencer</a>
-              <a href="#about" class="btn link-btn ms-2">En savoir plus <i class="bi bi-arrow-right ms-1"></i></a>
+              
             </div>
           </div>
         </article>
@@ -403,26 +462,26 @@
 
         <div class="info-item">
           <i class="bi bi-geo-alt icon"></i>
-          <h3>Régions</h3>
-          <p>Sherbrooke, Estrie et régions avoisinantes</p>
+          <h3>Régions</h3> 
+          <p>Montérégie</p>
         </div>
 
         <div class="info-item">
           <i class="bi bi-telephone icon"></i>
           <h3>Appeler</h3>
-          <p>+1 (xxx) xxx-xxxx</p>
+          <p>(438) 501-5900</p>
         </div>
 
         <div class="info-item">
           <i class="bi bi-envelope icon"></i>
           <h3>Courriel</h3>
-          <p>malissia@propriodirect.com</p>
+          <p>malissialeblanc@gmail.com</p>
         </div>
 
       </div>
 
       <div class="col-lg-8">
-        <form action="forms/contact.php" method="post" class="php-email-form">
+        <form action="https://formspree.io/f/XXXXXXX" method="POST" class="php-email-form">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -430,12 +489,15 @@
             </div>
 
             <div class="col-md-6">
-              <input type="email" class="form-control" name="email" placeholder="Courriel" required>
+              <input type="email" class="form-control" name="_replyto" placeholder="Courriel" required>
             </div>
 
             <div class="col-md-12">
               <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
             </div>
+
+            <!-- Champs utiles: origine site -->
+            <input type="hidden" name="site" value="Malissia Castonguay Leblanc – Landing Page">
 
             <div class="col-md-12 text-center">
               <button type="submit">Envoyer</button>
@@ -451,6 +513,7 @@
 
 </section>
 
+
 <!-- FOOTER -->
 <footer id="footer" class="footer dark-background">
 
@@ -460,8 +523,8 @@
       <div class="col-lg-3 col-md-6 d-flex">
         <i class="bi bi-geo-alt icon"></i>
         <div>
-          <h4>Régions</h4>
-          <p>Sherbrooke & Estrie<br>Québec</p>
+          <h4>Région</h4>
+          <p>Montérégie</p>
         </div>
       </div>
 
@@ -469,8 +532,8 @@
         <i class="bi bi-telephone icon"></i>
         <div>
           <h4>Contact</h4>
-          <p><strong>Téléphone :</strong> +1 (xxx) xxx-xxxx<br>
-            <strong>Email :</strong> malissia@propriodirect.com
+          <p><strong>Téléphone :</strong> (438) 501-5900<br>
+            <strong>Email :</strong> malissialeblanc@gmail.com
           </p>
         </div>
       </div>
