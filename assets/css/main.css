@@ -12027,3 +12027,11 @@ section,
 
 
 
+.features-bg {
+  border: 5px solid #000;
+  border-radius: 12px; /* optional but looks cleaner */
+}
+.intro-panel,
+.intro-panel * {
+  border-bottom: none !important;
+}

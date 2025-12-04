@@ -28,6 +28,62 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+.logo-img {
+  height: 42px;    /* adjust as needed */
+  width: auto;
+  display: block;
+}
+.hero-image img.main-product {
+  width: 120%;
+  max-width: none;
+}
+
+.hero-image {
+  transform: scale(1.05);
+}
+/* Make all feature badges the same red */
+.f-icon {
+  background: #d0103a !important;
+  color: #fff !important;
+}
+.info-item {
+  display: flex;
+  flex-direction: column; /* forces vertical layout */
+  align-items: flex-start; 
+}
+
+.info-item .icon {
+  margin-bottom: 10px; /* icon → h3 spacing */
+}
+
+.info-item h3 {
+  margin: 0 0 6px 0; /* h3 → p spacing */
+}
+/* HERO BACKGROUND IMAGE */
+.hero-bg {
+  position: relative;
+  overflow: hidden;
+  background: url("assets/img/premium-background.svg") no-repeat center right;
+  background-size: cover;
+}
+/* FEATURES DARK LUXURY BACKGROUND */
+.features-bg {
+  position: relative;
+  overflow: hidden;
+  background: url("assets/img/premium-background-dark.svg") no-repeat center right;
+  background-size: cover;
+}
+
+.intro-highlights li {
+  color: #fff !important;        /* text becomes white */
+}
+
+.intro-highlights li i {
+  color: inherit !important;     /* icon keeps its original color */
+}
+
+  </style>
 </head>
 
 <body class="index-page">
@@ -36,9 +92,10 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <h1 class="sitename">Malissia Leblanc</h1>
-      </a>
+<a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+  <img src="assets/img/logo.svg" alt="Malissia Leblanc" class="logo-img">
+</a>
+
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -50,13 +107,14 @@
         </ul>
       </nav>
 
-      <a class="btn-getstarted" href="#contact">Contacter Malissia</a>
+      <a class="btn-getstarted" href="#contact">Évaluation Gratuite</a>
 
     </div>
   </header>
 
   <!-- HERO -->
  <section id="hero" class="hero section">
+
   <div class="container">
 
     <div class="row align-items-center">
@@ -92,10 +150,10 @@
 
       <div class="col-lg-6 hero-image-wrapper" data-aos="fade-left" data-aos-delay="200">
         <div class="hero-image">
-          <img src="assets/img/Malissia.webp" alt="Propriété moderne" class="img-fluid main-product">
+          <img src="assets/img/Malissia.png" alt="Propriété moderne" class="img-fluid main-product">
           <div class="floating-badge">
-            <span class="discount">Nouvelle</span>
-            <span class="discount-text">Mise en marché</span>
+            <span class="discount">Votre</span>
+            <span class="discount-text">Courtière</span>
           </div>
         </div>
         <div class="decorative-element"></div>
@@ -106,7 +164,7 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="about section">
+<section id="about" class="about section ">
 
   <div class="container section-title" data-aos="fade-up">
     <h2>À propos</h2>
@@ -118,7 +176,7 @@
     <div class="row align-items-center gy-5">
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
         <div class="about-image-wrapper position-relative">
-          <img src="assets/img/about/about-8.webp" alt="Malissia Leblanc" class="img-fluid rounded-4">
+          <img src="assets/img/about.webp" alt="Malissia Leblanc" class="img-fluid rounded-4">
           <div class="mission-card">
             <div class="mission-icon">
               <i class="bi bi-heart"></i>
@@ -177,126 +235,263 @@
 
 </section>
 
-<!-- STEPS -->
-<section id="steps" class="steps section">
+<!-- Retun Policy Section -->
+<section id="steps" class="retun-policy section">
 
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Processus</h2>
-    <p>Un accompagnement simple, clair et structuré.</p>
-  </div>
+  <div class="container" data-aos="fade-up">
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="steps-wrapper">
-
-      <!-- Step 1 -->
-      <div class="step-item row gy-5 align-items-center">
-        <div class="col-lg-6">
-          <img src="assets/img/steps/steps-1.webp" class="img-fluid" alt="">
+    <!-- Hero Section -->
+    <div class="return-hero" data-aos="fade-up">
+      <div class="hero-content">
+        <h2>Un processus immobilier clair et sans stress</h2>
+        <p>Que vous achetiez ou vendiez une propriété, profitez d’un accompagnement structuré, professionnel et adapté au marché du Québec.</p>
+      </div>
+      <div class="return-period-box">
+        <div class="box-content">
+          <span class="days">360°</span>
+          <span class="text">Accompagnement complet</span>
         </div>
+      </div>
+    </div>
+
+    <!-- Return Policy Overview -->
+    <div class="policy-overview" data-aos="fade-up" data-aos-delay="100">
+      <div class="row">
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card">
+            <div class="card-content">
+              <i class="bi bi-house-check"></i>
+              <h4>Évaluation professionnelle</h4>
+              <p>Analyse complète du marché, positionnement stratégique et estimation précise selon les standards du Québec.</p>
+              <a href="#contact" class="learn-more">Demander mon évaluation gratuite<i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card">
+            <div class="card-content">
+              <i class="bi bi-people"></i>
+              <h4>Accompagnement </h4>
+              <p>Gestion complète de votre transaction : visites, évaluatation, négociation avec les acheteurs ou vendeurs et documents légaux.</p>
+              <a href="#contact" class="learn-more">Me contacter <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card">
+            <div class="card-content">
+              <i class="bi bi-shield-lock"></i>
+              <h4>Conformité & sécurité</h4>
+              <p>Protection complète grâce aux normes de l’OACIQ, gestion rigoureuse des documents et conseils juridiques appropriés.</p>
+              <a href="#contac" class="learn-more">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Return Requirements -->
+    <div class="return-requirements" data-aos="fade-up" data-aos-delay="200">
+      <div class="row align-items-center">
+
         <div class="col-lg-6">
-          <div class="step-content">
-            <div class="step-number">01</div>
-            <h3>Rencontre & Analyse</h3>
-            <p>Comprendre vos objectifs, votre budget et vos préférences afin d’établir la meilleure stratégie pour vous.</p>
-            <ul class="step-features">
-              <li><i class="bi bi-check2-circle"></i> Analyse personnalisée</li>
-              <li><i class="bi bi-check2-circle"></i> Discussion de vos priorités</li>
-              <li><i class="bi bi-check2-circle"></i> Explications claires</li>
+          <div class="requirements-content">
+            <h3>Documents nécessaires</h3>
+            <p class="subtitle">Pour une transaction fluide, assurez-vous d'avoir :</p>
+            <ul class="checks-list">
+
+              <li>
+                <i class="bi bi-check-lg"></i>
+                <div class="requirement-text">
+                  <h5>Certificat de localisation</h5>
+                  <p>À jour ou prêt à être commandé pour valider les limites et l’état actuel du terrain.</p>
+                </div>
+              </li>
+
+              <li>
+                <i class="bi bi-check-lg"></i>
+                <div class="requirement-text">
+                  <h5>Déclarations du vendeur</h5>
+                  <p>Informations complètes et exactes sur l'état de la propriété.</p>
+                </div>
+              </li>
+
+              <li>
+                <i class="bi bi-check-lg"></i>
+                <div class="requirement-text">
+                  <h5>Preuve de financement (acheteur)</h5>
+                  <p>Préautorisation hypothécaire recommandée avant le début des visites.</p>
+                </div>
+              </li>
+
+              <li>
+                <i class="bi bi-check-lg"></i>
+                <div class="requirement-text">
+                  <h5>Factures et documents pertinents</h5>
+                  <p>Rénovations, entretiens majeurs, garanties, plans, permis, etc.</p>
+                </div>
+              </li>
+
             </ul>
           </div>
         </div>
-      </div>
 
-      <!-- Step 2 -->
-      <div class="step-item row gy-5 align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <img src="assets/img/steps/steps-2.webp" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="step-content">
-            <div class="step-number">02</div>
-            <h3>Planification & Stratégie</h3>
-            <p>Recherche active, plan marketing, visites, comparatifs de marché et conseils adaptés.</p>
-            <ul class="step-features">
-              <li><i class="bi bi-check2-circle"></i> Stratégie adaptée</li>
-              <li><i class="bi bi-check2-circle"></i> Mise en marché moderne</li>
-              <li><i class="bi bi-check2-circle"></i> Conseils clairs</li>
-            </ul>
+        <div class="col-lg-6">
+          <div class="exceptions-box" data-aos="fade-left">
+            <div class="box-header">
+              <i class="bi bi-exclamation-circle"></i>
+              <h4>Éléments pouvant influencer la transaction</h4>
+            </div>
+
+            <div class="exceptions-grid">
+              <div class="exception-item">
+                <i class="bi bi-hammer"></i>
+                <span>Travaux ou réparations nécessaires</span>
+              </div>
+              <div class="exception-item">
+                <i class="bi bi-clipboard-x"></i>
+                <span>Certificat expiré</span>
+              </div>
+              <div class="exception-item">
+                <i class="bi bi-bandaid"></i>
+                <span>Problèmes connus / vices potentiels</span>
+              </div>
+              <div class="exception-item">
+               <i class="bi bi-exclamation-triangle"></i>
+              <span>Documents manquants ou incomplets</span>
+
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Step 3 -->
-      <div class="step-item row gy-5 align-items-center">
-        <div class="col-lg-6">
-          <img src="assets/img/steps/steps-3.webp" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-6">
+      </div>
+    </div>
+
+    <!-- Return Process Steps -->
+    <div class="return-steps" data-aos="fade-up" data-aos-delay="300">
+      <h3>Étapes de votre transaction</h3>
+
+      <div class="steps-timeline">
+
+        <div class="step-item active">
+          <div class="step-number">1</div>
           <div class="step-content">
-            <div class="step-number">03</div>
-            <h3>Accompagnement Complet</h3>
-            <p>Support constant jusqu’à la signature : négociation, suivi, documents et soutien administratif.</p>
-            <ul class="step-features">
-              <li><i class="bi bi-check2-circle"></i> Négociation efficace</li>
-              <li><i class="bi bi-check2-circle"></i> Suivi continu</li>
-              <li><i class="bi bi-check2-circle"></i> Assistance à chaque étape</li>
-            </ul>
+            <h5>Analyse & stratégie</h5>
+            <p>Rencontre initiale, compréhension de vos objectifs et évaluation du marché.</p>
           </div>
         </div>
-      </div>
 
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h5>Mise en marché ou recherche</h5>
+            <p>Photos professionnelles, publicité optimisée, visites ou sélection de propriétés.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h5>Négociation & conditions</h5>
+            <p>Gestion des offres, inspection, financement, délais et respect des normes légales.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h5>Signature chez le notaire</h5>
+            <p>Finalisation de la transaction et transfert officiel de la propriété.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FAQs -->
+    <div class="return-faqs" data-aos="fade-up" data-aos-delay="400">
+      <div class="row">
+
+        <div class="col-lg-4">
+          <div class="faq-header">
+            <h3>Questions courantes</h3>
+            <p>Voici les réponses aux questions les plus fréquentes concernant l’achat ou la vente au Québec.</p>
+            <a href="#contact" class="contact-support">
+              <i class="bi bi-headset"></i>
+              Besoin d’assistance ?
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <h3>
+                Dois-je obtenir une préautorisation avant les visites ?
+                <i class="bi bi-plus-lg faq-toggle"></i>
+              </h3>
+              <div class="faq-answer">
+                <p>Oui. Cela accélère votre démarche, renforce votre position en négociation et évite les retards.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                Comment déterminer le bon prix de vente ?
+                <i class="bi bi-plus-lg faq-toggle"></i>
+              </h3>
+              <div class="faq-answer">
+                <p>Une analyse comparative du marché, combinée à l’expertise du courtier, permet d’établir un prix optimal et réaliste.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                Quels sont les délais typiques au Québec ?
+                <i class="bi bi-plus-lg faq-toggle"></i>
+              </h3>
+              <div class="faq-answer">
+                <p>Inspection, conditions, financement, notaire. Selon le type de propriété, un délai de 30 à 60 jours est courant.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="return-cta" data-aos="fade-up" data-aos-delay="500">
+      <div class="cta-content">
+        <h4>Prêt à débuter votre projet immobilier ?</h4>
+        <p>Planifiez une rencontre et recevez un accompagnement sur mesure.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn-primary">Planifier une rencontre</a>
+          <a href="#" class="btn-secondary">Obtenir une évaluation</a>
+        </div>
+      </div>
     </div>
 
   </div>
 
 </section>
 
-<!-- CTA -->
-<section class="call-to-action-1 call-to-action section" id="call-to-action">
-  <div class="cta-bg" style="background-image: url('assets/img/real-estate/showcase-3.webp');"></div>
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="row justify-content-center">
-      <div class="col-xl-6 col-lg-8">
 
-        <div class="cta-content text-center">
-          <h2>Prêt à trouver la bonne propriété ?</h2>
-          <p>Bénéficiez d’un accompagnement humain, moderne et adapté aux réalités du marché actuel.</p>
-
-          <div class="cta-buttons">
-            <a href="#contact" class="btn btn-primary">Contacter Malissia</a>
-            <a href="#contact" class="btn btn-outline">Planifier un appel</a>
-          </div>
-
-          <div class="cta-features">
-            <div class="feature-item">
-              <i class="bi bi-telephone-fill"></i>
-              <span>Appel découverte gratuit</span>
-            </div>
-            <div class="feature-item">
-              <i class="bi bi-clock-fill"></i>
-              <span>Disponibilité rapide</span>
-            </div>
-            <div class="feature-item">
-              <i class="bi bi-shield-check-fill"></i>
-              <span>Courtier certifié</span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
 <!-- FEATURES -->
-<section id="features" class="features section">
+<section id="features" class="features section features-bg">
+
 
   <div class="container section-title" data-aos="fade-up">
-    <h2>Services</h2>
-    <p>Des outils modernes, un accompagnement humain.</p>
+    <h2 class="text-white">Services</h2>
+    <p class="text-white">Des outils modernes, un accompagnement humain.</p>
   </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -309,16 +504,16 @@
             <img src="assets/img/features/features-3.webp" alt="" class="img-fluid rounded-4 shadow-sm">
           </figure>
           <div class="intro-content">
-            <h3 class="intro-title">Une expérience simple et efficace</h3>
-            <p>Acheter ou vendre une propriété ne devrait pas être compliqué. Avec une approche moderne et accessible, tout devient plus clair.</p>
+            <h3 class="intro-title text-white">Une expérience simple et efficace</h3>
+            <p class="text-white">Acheter ou vendre une propriété ne devrait pas être compliqué. Avec une approche moderne et accessible, tout devient plus clair.</p>
             <ul class="intro-highlights list-unstyled mt-3">
-              <li><i class="bi bi-check-circle-fill"></i> Outils numériques modernes</li>
-              <li><i class="bi bi-check-circle-fill"></i> Communication rapide et efficace</li>
-              <li><i class="bi bi-check-circle-fill"></i> Accompagnement personnalisé</li>
+              <li><i class="bi bi-check-circle-fill "></i> Outils numériques modernes</li>
+              <li><i class="bi bi-check-circle-fill "></i> Communication rapide et efficace</li>
+              <li><i class="bi bi-check-circle-fill "></i> Accompagnement personnalisé</li>
             </ul>
             <div class="mt-4">
               <a href="#contact" class="btn cta-btn"><i class="bi bi-box-arrow-in-right me-2"></i>Commencer</a>
-              <a href="#about" class="btn link-btn ms-2">En savoir plus <i class="bi bi-arrow-right ms-1"></i></a>
+              
             </div>
           </div>
         </article>
@@ -392,7 +587,7 @@
 
   <div class="container section-title" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>Un projet immobilier ? Parlons-en.</p>
+    <p>Un projet immobilier ? Parlons-en. <strong>Évaluation gratuite disponible.</strong></p>
   </div>
 
   <div class="container">
@@ -404,45 +599,77 @@
         <div class="info-item">
           <i class="bi bi-geo-alt icon"></i>
           <h3>Régions</h3>
-          <p>Sherbrooke, Estrie et régions avoisinantes</p>
+          <p>Montérégie</p>
         </div>
 
         <div class="info-item">
           <i class="bi bi-telephone icon"></i>
           <h3>Appeler</h3>
-          <p>+1 (xxx) xxx-xxxx</p>
+          <p>(438) 501-5900</p>
         </div>
 
         <div class="info-item">
           <i class="bi bi-envelope icon"></i>
           <h3>Courriel</h3>
-          <p>malissia@propriodirect.com</p>
+          <p>malissialeblanc@gmail.com</p>
         </div>
 
       </div>
 
       <div class="col-lg-8">
-        <form action="forms/contact.php" method="post" class="php-email-form">
+
+        <form action="https://formspree.io/f/XXXXXXX" method="POST" class="php-email-form">
+
           <div class="row gy-4">
 
+            <!-- Nom -->
             <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Nom complet" required>
+              <input type="text" name="Nom complet" class="form-control" placeholder="Nom complet" required>
             </div>
 
+            <!-- Courriel -->
             <div class="col-md-6">
-              <input type="email" class="form-control" name="email" placeholder="Courriel" required>
+              <input type="email" name="Courriel" class="form-control" placeholder="Courriel" required>
             </div>
 
+            <!-- Téléphone -->
+            <div class="col-md-6">
+              <input type="text" name="Téléphone" class="form-control" placeholder="Téléphone (optionnel)">
+            </div>
+
+            <!-- Type de projet (dropdown) -->
+            <div class="col-md-6">
+              <select name="Type de projet" class="form-control" required>
+                <option value="" disabled selected>Type de projet</option>
+                <option value="Évaluation gratuite">Évaluation gratuite</option>
+                <option value="Achat d'une propriété">Achat d'une propriété</option>
+                <option value="Vente d'une propriété">Vente d'une propriété</option>
+                <option value="Investissement immobilier">Investissement immobilier</option>
+                <option value="Question générale">Question générale</option>
+              </select>
+            </div>
+
+            <!-- Message -->
             <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+              <textarea class="form-control" name="Message" rows="6" placeholder="Message" required></textarea>
             </div>
 
+            <!-- Champ caché: origine du site -->
+            <input type="hidden" name="Origine" value="Malissia Castonguay Leblanc – Landing Page">
+
+            <!-- Confirmation automatique Formspree -->
+            <input type="hidden" name="_subject" value="Nouveau message via le site web - Malissia">
+            <input type="hidden" name="_replyto">
+
+            <!-- Bouton -->
             <div class="col-md-12 text-center">
               <button type="submit">Envoyer</button>
             </div>
 
           </div>
+
         </form>
+
       </div>
 
     </div>
@@ -450,6 +677,8 @@
   </div>
 
 </section>
+
+
 
 <!-- FOOTER -->
 <footer id="footer" class="footer dark-background">
@@ -460,8 +689,8 @@
       <div class="col-lg-3 col-md-6 d-flex">
         <i class="bi bi-geo-alt icon"></i>
         <div>
-          <h4>Régions</h4>
-          <p>Sherbrooke & Estrie<br>Québec</p>
+          <h4>Région</h4>
+          <p>Montérégie</p>
         </div>
       </div>
 
@@ -469,8 +698,8 @@
         <i class="bi bi-telephone icon"></i>
         <div>
           <h4>Contact</h4>
-          <p><strong>Téléphone :</strong> +1 (xxx) xxx-xxxx<br>
-            <strong>Email :</strong> malissia@propriodirect.com
+          <p><strong>Téléphone :</strong> (438) 501-5900<br>
+            <strong>Email :</strong> malissialeblanc@gmail.com
           </p>
         </div>
       </div>
